@@ -6,7 +6,7 @@ Este é um repositório contendo uma lista de exercícios projetados para ajudar
 
 ## Sumário Semana 1
 
-- [Aula 1](/semana1/aula1)
+- [Aula 1](/semana1/aula1/aula1.md)
 - [Aula 2](/semana1/aula2)
 - [Aula 3](/semana1/aula3)
 - [Aula 4](/semana1/aula4)
