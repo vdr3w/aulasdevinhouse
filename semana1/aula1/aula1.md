@@ -6,8 +6,8 @@ Este é um repositório contendo uma lista de exercícios projetados para ajudar
 
 ## Sumário
 
-1. [Semana 1](/semana1)
-2. [Semana 2](/semana2)
+1. [Semana 1](#semana1)
+2. [Semana 2](#semana2)
 
 ---
 
