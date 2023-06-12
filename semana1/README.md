@@ -4,38 +4,10 @@ Este é um repositório contendo uma lista de exercícios projetados para ajudar
 
 ---
 
-## Sumário
+## Sumário Semana 1
 
-1. [Semana 1](#semana1)
-2. [Semana 2](#semana2)
-
----
-
-### Semana 1
-
-- [Aula 1](/semana1/exercicio1.md)
-- [Aula 2](/semana1/exercicio2.md)
-- [Aula 3](/semana1/exercicio3.md)
-- [Aula 4](/semana1/exercicio4.md)
-- [Aula 5](/semana1/exercicio5.md)
-  ...
-
-### Semana 2
-
-- [Aula 1](/semana2/exercicio1.md)
-- [Aula 2](/semana2/exercicio2.md)
-- [Aula 3](/semana2/exercicio3.md)
-- [Aula 4](/semana2/exercicio4.md)
-- [Aula 5](/semana2/exercicio5.md)
-
----
-
-## Contribuindo
-
-Para contribuir com este repositório, você pode criar um pull request com as suas sugestões de exercícios. Todos os contribuintes serão creditados.
-
----
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+- [Aula 1](/semana1/aula1.md)
+- [Aula 2](/semana1/aulao2.md)
+- [Aula 3](/semana1/aula3.md)
+- [Aula 4](/semana1/aula4.md)
+- [Aula 5](/semana1/aula5.md)
