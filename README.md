@@ -13,20 +13,8 @@ Este é um repositório contendo uma lista de exercícios projetados para ajudar
 
 ### Semana 1
 
-- [Aula 1](/semana1/aula1)
+- [Aula 1](/semana1/aula1/aula1.md)
 - [Aula 2](/semana1/aula2)
 - [Aula 3](/semana1/aula3)
 - [Aula 4](/semana1/aula4)
 - [Aula 5](/semana1/aula5)
-
----
-
-## Contribuindo
-
-Para contribuir com este repositório, você pode criar um pull request com as suas sugestões de exercícios. Todos os contribuintes serão creditados.
-
----
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
