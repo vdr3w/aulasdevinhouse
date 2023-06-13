@@ -15,3 +15,4 @@ https://docs.google.com/presentation/d/1vgYmwGlAgQy4I8OoD8UHImMTmGQ3vesaKaRBqAv9
 
 Resumo / Pensamentos Finais:
 - Conteúdo ja estudado no passado, sem observações até agora.
+- Arquivos utilizados e criados em aula estão aqui dentro do repositório.
