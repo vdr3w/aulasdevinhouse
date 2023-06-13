@@ -15,5 +15,5 @@ https://docs.google.com/presentation/d/1rUqCmd1qIaEDNjQfo4Kkmv8EvwS7rIy5KqvadOi2
 
 Resumo / Pensamentos Finais:
 
-- Resumo para se fazer durante a aula.
-- [Arquivos utilizados e criados em aula estão aqui dentro do repositório](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana1/aula2)
+- Conteúdo ja estudado no passado, sem observações até agora.
+- [Arquivos utilizados em aula: Repositório Aula2](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana1/aula2)
