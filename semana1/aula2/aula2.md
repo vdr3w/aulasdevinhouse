@@ -15,3 +15,5 @@ LINK AQ
 
 Resumo / Pensamentos Finais:
 - Resumo para se fazer durante a aula.
+
+- [Aula 2](/semana1/aula2)
