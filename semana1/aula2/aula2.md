@@ -15,5 +15,4 @@ LINK AQ
 
 Resumo / Pensamentos Finais:
 - Resumo para se fazer durante a aula.
-
-- [Aula 2](/semana1/aula2)
+- [Arquivos utilizados e criados em aula estão aqui dentro do repositório](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana1/aula2)
