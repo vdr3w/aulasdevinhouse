@@ -27,30 +27,42 @@ ul > p {
 
 /* ASSINATURA */
 table {
-  margin: 0 auto;
-  border-collapse: collapse;
+  margin: auto;
+  border-collapse: separate;
   border: 3px solid black;
-  padding: 7px;
+  background-color: rgb(255, 245, 232);
+  box-shadow: 2px 2px 2px 0px rgba(128, 0, 0, 1);
 }
 
 td {
   text-align: center;
 }
 
+tr {
+  padding: 25px;
+}
+
 p {
-  margin: 8px;
+  margin: 9px;
 }
 
 strong {
-  font-size: 16px;
+  font-size: 22px;
+  font-family: "Lobster", cursive;
 }
 
 a {
   text-decoration: none;
   color: blue;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .zucchetti {
-  font-size: 18px;
+  font-size: 19px;
+  font-family: "Josefin Sans", sans-serif;
+  background: #800000;
+  background: linear-gradient(to right, #800000 0%, #004dff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* ASSINATURA */
