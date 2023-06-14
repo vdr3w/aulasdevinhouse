@@ -1,0 +1,26 @@
+/* ESTA DEFINIÇÃO SERÁ SOBESCRITA */
+h1 {
+  background-color: plum;
+}
+
+/* TODOS OS ELEMENTOS p QUE ESTÃO DENTRO DE ul */
+ul p {
+  background-color: yellow;
+}
+
+/* TODOS OS ELEMENTOS p DIRETAMENTE DESCENDENTES DE ul */
+ul > p {
+  background-color: rgb(255, 0, 212);
+}
+
+.fundo-verde {
+  background-color: green;
+}
+
+.texto-laranja {
+  color: orange;
+}
+
+#este-aqui {
+  background-color: blue;
+}
