@@ -64,5 +64,6 @@ a {
   background: linear-gradient(to right, #800000 0%, #004dff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 1px;
 }
 /* ASSINATURA */
