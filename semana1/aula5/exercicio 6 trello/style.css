@@ -153,3 +153,32 @@ nav > a:hover {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+form {
+  width: 1046;
+  /* exemplo de uso de CALC */
+  max-width: calc(100vw - 64px);
+  display: flex;
+  gap: 8px;
+  color: navy;
+  font-weight: bold;
+  align-items: center;
+}
+
+form input[type="text"] {
+  flex-grow: 1;
+}
+
+form input {
+  padding: 4px;
+  border-radius: 8px;
+  border-color: gray;
+}
+
+form > button {
+  border-radius: 8px;
+  background-color: red;
+  color: white;
+  padding: 8px 18px;
+  text-decoration: none;
+}
