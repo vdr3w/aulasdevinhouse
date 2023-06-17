@@ -163,10 +163,15 @@ form {
   color: navy;
   font-weight: bold;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 form input[type="text"] {
   flex-grow: 1;
+}
+
+form input[type="date"] {
+  min-width: 99px;
 }
 
 form input {
@@ -182,3 +187,12 @@ form > button {
   padding: 8px 18px;
   text-decoration: none;
 }
+
+/* se a tela tiver ate 800px, bgcolor fica rosa */
+/* 
+@media (max-width: 800px) {
+  body {
+    background-color: pink;
+  }
+} 
+*/
