@@ -20,4 +20,4 @@
 ### Semana 2
 
 - [Aula 1 # Versionamento+ GitHub Classroom](/semana2/aula1/aula1.md)
-- [Aula 2 # Javascript - Introdução](/semana2/aula2/aula2.md)
+- [Aula 2 # Javascript - Clone Instagram](/semana2/aula2/aula2.md)
