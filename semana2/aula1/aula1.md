@@ -16,4 +16,5 @@ https://docs.google.com/presentation/d/1N7odz4COY1c_CWjDzMT7C0cI67K2ozm6Y5617TKt
 Resumo / Pensamentos Finais:
 
 - Conteúdo ja estudado no passado, sem observações até agora.
+- GitHub ClassRoom simulando ambiente de trabalho, muito eficaz.
 - Arquivos utilizados em aula: [Repositório Aula1](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana2/aula1)

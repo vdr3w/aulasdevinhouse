@@ -15,6 +15,5 @@ https://docs.google.com/presentation/d/1hAE6BzeBPLN4cSzdSO6BYJCbQaH1y_8vy8UZpMmB
 
 Resumo / Pensamentos Finais:
 
-- Conteúdo ja estudado no passado, sem observações até agora.
 - Leitura recomendada: Documentação do Date https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date
 - Arquivos utilizados em aula: [Repositório Aula2](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana2/aula2)
