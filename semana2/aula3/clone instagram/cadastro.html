@@ -21,17 +21,22 @@
           id="campo-nome-completo"
           placeholder="Nome Completo" />
 
-        <span hidden id="error-nome" class="texto-erro"
-          >Nome é obrigatório</span
-        >
+        <span hidden id="error-nome" class="texto-erro"></span>
       </div>
 
       <input type="email" id="campo-email" placeholder="E-mail" />
       <input type="tel" id="campo-telefone" placeholder="Telefone" />
 
-      <input id="campo-senha" type="password" placeholder="Digite sua senha" />
+      <div class="input-area">
+        <input
+          id="campo-senha"
+          type="password"
+          placeholder="Digite sua senha" />
+        <span hidden id="error-senha" class="texto-erro"></span>
+      </div>
+
       <input
-        id="campo-senha"
+        id="campo-confirme-senha"
         type="password"
         placeholder="Confirme sua senha" />
 
