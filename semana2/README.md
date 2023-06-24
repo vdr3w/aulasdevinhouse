@@ -9,12 +9,12 @@
 
 ---
 
-### Semana 1
+### Semana 2
 
-- [Aula 1 - Versionamento + GitHub Classroom](/semana1/aula1)
-- [Aula 2 - Introdução à JavaScript + Clone Instagram](/semana1/aula2)
-- [Aula 3 - JavaScript + Finalização Clone Instagram](/semana1/aula3)
-- [Aula 4](/semana1/aula4)
-- [Aula 5](/semana1/aula5)
+- [Aula 1 # Versionamento+ GitHub Classroom](/semana2/aula1/aula1.md)
+- [Aula 2 # Javascript & Inicio Clone Instagram](/semana2/aula2/aula2.md)
+- [Aula 3 # Javascript & Final Clone Instagram](/semana2/aula3/aula3.md)
+- [Aula 4 # Arrays JavaScript](/semana2/aula4/aula4.md)
+- [Aula 5 # Exercicios JavaScript](/semana2/aula5/aula5.md)
 
 ---
