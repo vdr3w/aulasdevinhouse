@@ -1,0 +1,231 @@
+<!-- APENAS DAR O COMMIT -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[M1S04] Ex 6 - Calculadora Salário - Andre Vieira</title>
+    <!--< CSS -->
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background: linear-gradient(
+          to right,
+          #83a4d4,
+          #b6fbff
+        ); /* Gradiente de fundo */
+        transition: all 0.3s linear; /* Transição suave para todas as propriedades */
+      }
+
+      .container {
+        min-width: 390px;
+        min-height: 250px;
+        max-width: 390px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-sizing: border-box; /* A largura e altura do contêiner incluem o preenchimento e a borda */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px; /* Bordas arredondadas para o contêiner */
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar um efeito de profundidade */
+        transition: all 0.3s ease-in-out; /* Animação suave para transições de estado */
+      }
+
+      .container:hover {
+        transform: scale(1.02); /* Efeito de "popping" ao passar o mouse */
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="number"] {
+        padding: 5px;
+        width: 250px;
+        border-radius: 5px; /* Bordas arredondadas para a entrada de dados */
+      }
+
+      button {
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px; /* Bordas arredondadas para o botão */
+        transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+      }
+
+      .container-botao {
+        padding-top: 10px;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      .resultado-texto {
+        display: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #4caf50;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        word-wrap: break-word;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    </style>
+    <!-- > -->
+  </head>
+  <body>
+    <!-- < Calculadora -->
+    <div class="container">
+      <h1>Calculadora Salario Liquido</h1>
+      <form>
+        <label for="salario">Salário do Funcionário:</label>
+        <input type="number" class="salario" name="salario" required />
+        <br />
+        <div class="container-botao">
+          <button type="button" onclick="calcularSalario()">Calcular</button>
+        </div>
+      </form>
+      <div class="resultado-texto" id="resultado"></div>
+    </div>
+    <!-- > -->
+    <!-- < Script -->
+    <script>
+      // Função para calcular o imposto de renda
+      function calcularImpostoRenda(salarioFuncionario) {
+        var impostoRenda = 0; // Variável inicial para o imposto de renda
+
+        if (salarioFuncionario <= 1903.98) {
+          impostoRenda = 0; // Nenhum imposto para salários até 1903.98
+        } else if (
+          salarioFuncionario >= 1903.99 &&
+          salarioFuncionario <= 2826.65
+        ) {
+          impostoRenda = salarioFuncionario * 0.075 - 142.8; // 7.5% de imposto para salários entre 1903.99 e 2826.65
+        } else if (
+          salarioFuncionario >= 2826.66 &&
+          salarioFuncionario <= 3751.05
+        ) {
+          impostoRenda = salarioFuncionario * 0.15 - 354.8; // 15% de imposto para salários entre 2826.66 e 3751.05
+        } else if (
+          salarioFuncionario >= 3751.06 &&
+          salarioFuncionario <= 4664.68
+        ) {
+          impostoRenda = salarioFuncionario * 0.225 - 636.13; // 22.5% de imposto para salários entre 3751.06 e 4664.68
+        } else {
+          impostoRenda = salarioFuncionario * 0.275 - 869.36; // 27.5% de imposto para salários acima de 4664.68
+        }
+        return impostoRenda; // Retornando o imposto de renda calculado
+      }
+
+      // Função para calcular o INSS
+      function calcularInss(salarioFuncionario) {
+        var inss = 0; // Variável inicial para o INSS
+        var tetoInss = 6433.57; // Teto INSS adicionado a parte
+
+        /* Determinando a alíquota do INSS com base no salário do funcionário */
+        if (salarioFuncionario <= 1302) {
+          inss = salarioFuncionario * 0.075; // 7.5% de INSS para salários até 1302
+        } else if (
+          salarioFuncionario >= 1302.01 &&
+          salarioFuncionario <= 2571.29
+        ) {
+          inss = salarioFuncionario * 0.09; // 9% de INSS para salários entre 1302.01 e 2571.29
+        } else if (
+          salarioFuncionario >= 2571.3 &&
+          salarioFuncionario <= 3856.94
+        ) {
+          inss = salarioFuncionario * 0.12; // 12% de INSS para salários entre 2571.3 e 3856.94
+        } else {
+          inss = salarioFuncionario * 0.14; // 14% de INSS para salários acima de 3856.94
+        }
+
+        // Verificando se o valor do INSS está acima do teto
+        if (inss > tetoInss) {
+          inss = tetoInss; // Se o valor do INSS estiver acima do teto, ele é ajustado para o teto
+        }
+
+        return inss; // Retornando o valor do INSS calculado
+      }
+
+      // Função para calcular o salário líquido
+      function calcularSalarioLiquido(salarioFuncionario, impostoRenda, inss) {
+        // O salário líquido é o salário do funcionário menos o imposto de renda e o INSS
+        var resultadoSalarioLiquido = salarioFuncionario - impostoRenda - inss;
+        return resultadoSalarioLiquido; // Retornando o salário líquido calculado
+      }
+
+      // Função principal para calcular o salário
+      function calcularSalario() {
+        // Obtendo o salário do funcionário do campo de input
+        var salarioFuncionario = Number(
+          document.querySelector(".salario").value
+        );
+
+        // Chamando as funções para calcular o INSS, o imposto de renda e o salário líquido
+        var inss = calcularInss(salarioFuncionario);
+        var impostoRenda = calcularImpostoRenda(salarioFuncionario);
+        var salarioLiquido = calcularSalarioLiquido(
+          salarioFuncionario,
+          impostoRenda,
+          inss
+        );
+
+        // Formatando os valores calculados para a moeda brasileira
+        var salarioFormatado = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(salarioLiquido);
+
+        var inssFormatado = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(inss);
+
+        var impostoRendaFormatado = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(impostoRenda);
+
+        // Mostrando os valores calculados na página
+        var resultadoDiv = document.querySelector(".resultado-texto");
+        resultadoDiv.style.display = "block"; // Tornando o elemento de resultado visível
+
+        // Inserindo os valores calculados no elemento de resultado
+        document.querySelector("#resultado").innerHTML =
+          "Salário Líquido: " +
+          salarioFormatado +
+          "<br>" +
+          "Valor do INSS: " +
+          inssFormatado +
+          "<br>" +
+          "Valor do Imposto de Renda: " +
+          impostoRendaFormatado;
+      }
+    </script>
+    <!-- > -->
+  </body>
+</html>
