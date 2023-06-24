@@ -6,6 +6,7 @@
 
 1. [Semana 1](/semana1)
 2. [Semana 2](/semana2)
+3. [Semana 3](/semana3)
 
 ---
 
