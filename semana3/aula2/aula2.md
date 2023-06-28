@@ -1,6 +1,6 @@
 ## Anotações
 
-# Vetores & Objetos Escopo Rest · Spread · Destruct
+# Arrays & Objetos & Escopo & [Rest · Spread · Destruct]
 
 ## Data: 27/06/2023
 
