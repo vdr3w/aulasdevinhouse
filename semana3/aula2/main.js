@@ -1,3 +1,6 @@
+// USE STRICT
+"use strict";
+
 // ARRAY EXEMPLOS >>>
 console.log("Aula 2");
 
@@ -88,3 +91,17 @@ if (true) {
 }
 
 console.log(comprimento); // Valor = 0 pois const esta contido no IF
+
+// REST EXEMPLOS
+
+function calcula(a, b, c, d) {
+  console.log(a, b, c, d);
+}
+
+calcula(1, 3, 2, 5, 6);
+
+function calcula(a, b, ...resto) {
+  console.log(a, b, resto);
+}
+
+calcula(1, 3, 2, 5, 6);
