@@ -43,7 +43,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 ### Semana 3
 
 - 🎈[Aula 1 # Funções & Arrow Functions](/semana3/aula1/aula1.md)
-- 🎈[Aula 2 # Arrays & Objetos & Escopo + [Rest · Spread · Destruct]](/semana3/aula2/aula2.md)
+- 🎈[Aula 2 # Arrays & Objetos & Escopo & [Rest · Spread · Destruct]](/semana3/aula2/aula2.md)
 - 🎈[Aula 3 # WIP](/semana3/aula3/aula3.md)
 - 🎈[Aula 4 # WIP](/semana3/aula4/aula4.md)
 - 🎈[Aula 5 # WIP](/semana3/aula5/aula5.md)
