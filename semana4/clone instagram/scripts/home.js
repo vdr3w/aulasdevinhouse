@@ -1,5 +1,5 @@
 // exemplo de array
-var listaSeguidores = ["drew", "andre", "leonardo", "rocha", "vieira"];
+let listaSeguidores = ["drew", "andre", "leonardo", "rocha", "vieira"];
 
 function exibirNome() {
   listaSeguidores.forEach((item) => {
@@ -10,7 +10,7 @@ function exibirNome() {
 exibirNome();
 
 // Object
-var usuario = {
+let usuario = {
   name: "Andre Vieira",
   username: "vdrew",
   qtd_seguidores: 21,

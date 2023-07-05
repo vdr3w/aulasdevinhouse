@@ -1,8 +1,6 @@
-const usuarios = [
-  { email: "drew1@drew.com", password: "drew" },
-  { email: "drew2@drew.com", password: "drew" },
-  { email: "drew3@drew.com", password: "drew" },
-];
+import { usuarios } from "../constantes/usuarios.js";
+
+document.getElementById("login-button").addEventListener("click", clicarBotao);
 
 function clicarBotao() {
   const email = document.getElementById("campo-email").value;
@@ -36,7 +34,7 @@ function clicarBotao() {
       window.location.href = "./home.html";
     } else {
       alert("Usuario nao encontrado");
-      // Resetando o botao para ficar desbloqueado.
+      // Revertendo as mudanças no botao. (linha25)
       document.getElementById("login-button").disabled = false;
       document.getElementById("login-button").style.backgroundColor = "#4bb4f8";
       document.getElementById("login-button").innerText = "Entrar";
