@@ -16,4 +16,4 @@ https://docs.google.com/presentation/d/14qDI0Rht2-yXpUEAab3Dgl8ND-n_HrG-LO4_SHij
 Resumo / Pensamentos Finais:
 
 - Retomando o projeto do Clone Instagram
-- Arquivos utilizados em aula: [Repositório Aula4](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana4/aula1)
+- Arquivos utilizados em aula: [Repositório Aula1](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana4/aula1)
