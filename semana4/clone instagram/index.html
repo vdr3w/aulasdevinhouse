@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Instagram - Andre Vieira</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- < Formulario -->
+    <form class="formulario">
+      <!-- < logo -->
+      <img
+        src="https://logosmarcas.net/wp-content/uploads/2020/04/Instagram-Logo.png"
+        alt="Logo Instagram"
+        width="250px" />
+      <!-- logo /> -->
+
+      <!-- < Inputs + Botao esqueci senha -->
+      <input
+        autofocus
+        type="text"
+        id="campo-email"
+        placeholder="Telefone, nome de usuário ou e-mail" />
+
+      <input id="campo-senha" type="password" placeholder="Digite sua senha" />
+
+      <button id="login-button" type="button" onclick="clicarBotao()">
+        Entrar
+      </button>
+
+      <a href="http://">Esqueci minha senha</a>
+      <!-- Inputs + Botao esqueci senha /> -->
+    </form>
+    <!-- Formulario /> -->
+    <!-- < Script -->
+    <script src="./scripts/login.js" type="module"></script>
+    <!-- Script /> -->
+  </body>
+</html>
