@@ -48,3 +48,10 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 4 # Funções de Arrays](/semana3/aula4/aula4.md)
 - 🎈[Aula 5 # Exercicios](/semana3/aula5/aula5.md)
 
+### Semana 4
+
+- 🎈[Aula 1 # Módulos e método .find()](/semana4/aula1/aula1.md)
+- 🎈[Aula 2 # Módulos e método .map()](/semana4/aula2/aula2.md)
+- 🎈[Aula 3 # Método .filter() e .every()](/semana4/aula3/aula3.md)
+- 🎈[Aula 4 # Método .every() e .reduce()](/semana4/aula4/aula4.md)
+- 🎈[Aula 5 # Exercicios](/semana4/aula5/aula5.md)

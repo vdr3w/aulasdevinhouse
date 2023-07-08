@@ -173,3 +173,21 @@ td img {
   border-radius: 50%;
   width: 50px;
 }
+
+.observation-message {
+  width: 100%;
+  height: 34px;
+  background-color: blue;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 18px;
+  border: 1px solid blue;
+  margin: 20px 0;
+}
+
+.disabled-message {
+  display: none;
+}

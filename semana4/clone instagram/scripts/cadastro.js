@@ -21,7 +21,3 @@ function reset() {
   document.getElementById("campo-senha").classList.remove("input-error");
   document.getElementById("error-senha").hidden = true;
 }
-
-// ADICIONAR REGEX PARA O RESTO DOS INPUTS <<<<<<<<<<
-// ADICIONAR REGEX PARA O RESTO DOS INPUTS <<<<<<<<<<
-// ADICIONAR REGEX PARA O RESTO DOS INPUTS <<<<<<<<<<
