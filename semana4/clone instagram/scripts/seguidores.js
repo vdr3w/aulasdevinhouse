@@ -89,6 +89,36 @@ function criarLinhasTabela() {
   });
 }
 
-function gerarLinhasTabela() {}
+function exibirObservacao() {
+  const seguidoresAtivos = seguidoresFormatados.every(
+    (seguidor) => seguidor.quantidade_publicacoes >= 20
+  );
 
+  if (seguidoresAtivos === true) {
+    document.getElementById("observation-message").innerText =
+      "Parabens sua rede de seguidores é ativa!";
+    document
+      .getElementById("observation-message")
+      .classList.remove("disabled-message");
+  } else {
+    document.getElementById("observation-message").innerText =
+      "Sua rede não é ativa!";
+    document
+      .getElementById("observation-message")
+      .classList.remove("disabled-message");
+  }
+}
+
+//ACUMULADOR =
+
+function quantidadeDePublicacoesSeguidores() {
+  const total = seguidoresFormatados.reduce((acumulador, itemDaVez) => {
+    return itemDaVez.quantidade_publicacoes + acumulador;
+  }, 0);
+
+  console.log(total);
+}
+
+quantidadeDePublicacoesSeguidores();
+exibirObservacao();
 window.onload = criarLinhasTabela;
