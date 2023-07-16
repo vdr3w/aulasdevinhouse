@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="formulario">Lista M1-S07-A3</h1>
+      <p>Lista Personalizada</p>
+    </header>
+
+    <main>
+      <form id="formulario">
+        <div>
+          <label for="titulo-item">Título</label>
+          <input type="text" id="titulo-item" name="titulo" required />
+        </div>
+
+        <div>
+          <label for="tipo-item">Tipo</label>
+          <select id="tipo-item" name="tipo">
+            <option value="nota">Nota</option>
+            <option value="tarefa">Tarefa</option>
+          </select>
+        </div>
+
+        <div>
+          <button type="reset">Limpar</button>
+          <button type="submit">Adicionar</button>
+        </div>
+      </form>
+
+      <ul id="lista-itens">
+        <!-- preenchido dinamicamente pelo javascript -->
+      </ul>
+    </main>
+
+    <footer>DevInHouse</footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
