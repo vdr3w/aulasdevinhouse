@@ -1,45 +1,75 @@
 import { usuarios } from "../constantes/usuarios.js";
 
-document
-  .getElementById("login-button")
-  .addEventListener("submit", realizarLogin);
+document.getElementById("form-login").addEventListener("submit", realizarLogin);
 
-function realizarLogin() {
-  const email = document.getElementById("campo-email").value;
-  const senha = document.getElementById("campo-senha").value;
-  // remover o input-error faz com que a borda vermelha do erro de digitação suma assim que o botao for clicado
-  document.getElementById("campo-email").classList.remove("input-error");
-  document.getElementById("campo-senha").classList.remove("input-error");
+document.getElementById("aceitar").addEventListener("click", salvarDecisao);
+document.getElementById("rejeitar").addEventListener("click", salvarDecisao);
 
-  // Com esse IF e ELSE IF se a pessoa nao digitar o email, fica vermelho a borda e foca no email, se digitar o email e esquecer a senha, o foco vira a senha e a borda da senha fica vermelha.
+function salvarDecisao() {
+  localStorage.setItem("decisao-permissao", "ok");
+  document.getElementById("modal-permission").style.display = "none";
+}
+
+const campoEmail = document.getElementById("campo-email");
+const campoSenha = document.getElementById("campo-senha");
+const loginButton = document.getElementById("login-button");
+
+function resetForm() {
+  campoEmail.classList.remove("input-error");
+  campoEmail.classList.remove("input-error");
+}
+
+function realizarLogin(event) {
+  event.preventDefault();
+
+  const email = campoEmail.value;
+  const senha = campoSenha.value;
+
+  resetForm();
+
   if (email === "") {
-    // Com boas praticas a melhor forma de se fazer profissionalmente é a seguinte, usando o classList.add >>>
-    document.getElementById("campo-email").classList.add("input-error");
-    // focar o cursor no elemento depois do erro
-    document.getElementById("campo-email").focus();
-    // alert("O Campo de Email é Obrigatório");
+    campoEmail.classList.add("input-error");
+    campoEmail.focus();
   } else if (senha === "") {
-    document.getElementById("campo-senha").classList.add("input-error");
-    document.getElementById("campo-senha").focus();
+    campoSenha.classList.add("input-error");
+    campoSenha.focus();
   } else {
-    // ELSE e ELSE IF usado, botao só muda caso o email e senha estejam certos
-    document.getElementById("login-button").disabled = true;
-    document.getElementById("login-button").style.backgroundColor = "gray";
-    document.getElementById("login-button").innerText = "Entrando..";
+    loginButton.disabled = true;
+    loginButton.style.opacity = 0.5;
+    loginButton.innerText = "Logando ...";
 
     const usuarioEncontrado = usuarios.find(
       (usuario) => usuario.email === email && usuario.password === senha
     );
     console.log(usuarioEncontrado);
     if (usuarioEncontrado) {
-      // Faz a janela mudar de link (pode ser usado ./nomedoarquivo.html para navegar ao inves de usar url)
-      window.location.href = "./home.html";
+      localStorage.setItem("nome_usuario");
+
+      campoEmail.style.display = "none";
+      campoSenha.style.display = "none";
+      loginButton.style.display = "none";
+
+      document.getElementById("form-login").innerText = "Entrando ...";
+
+      setTimeout(() => {
+        window.location.href = "./home.html";
+      }, 3000);
     } else {
+      loginButton.disabled = false;
+      loginButton.style.opacity = 1;
+      loginButton.innerText = "Entrar";
+
       alert("Usuario nao encontrado");
-      // Revertendo as mudanças no botao. (linha25)
-      document.getElementById("login-button").disabled = false;
-      document.getElementById("login-button").style.backgroundColor = "#4bb4f8";
-      document.getElementById("login-button").innerText = "Entrar";
     }
   }
 }
+
+function exibirModal() {
+  const decisao = localStorage.getItem("decisao-permissao");
+
+  if (decisao !== "ok") {
+    document.getElementById("modal-permission").style.display = "flex";
+  }
+}
+
+setTimeout(exibirModal, 5000);

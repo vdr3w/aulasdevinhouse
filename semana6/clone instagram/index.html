@@ -7,16 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- < Formulario -->
-    <form class="formulario">
-      <!-- < logo -->
+    <form class="formulario" id="form-login">
       <img
         src="https://logosmarcas.net/wp-content/uploads/2020/04/Instagram-Logo.png"
         alt="Logo Instagram"
         width="250px" />
-      <!-- logo /> -->
 
-      <!-- < Inputs + Botao esqueci senha -->
       <input
         autofocus
         type="text"
@@ -25,16 +21,30 @@
 
       <input id="campo-senha" type="password" placeholder="Digite sua senha" />
 
-      <button id="login-button" type="submit" onclick="clicarBotao()">
-        Entrar
-      </button>
-
-      <a href="http://">Esqueci minha senha</a>
-      <!-- Inputs + Botao esqueci senha /> -->
+      <button id="login-button" type="submit">Entrar</button>
     </form>
-    <!-- Formulario /> -->
-    <!-- < Script -->
+
+    <div
+      id="modal-permission"
+      style="
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      ">
+      <div style="background-color: #fff; padding: 20px">
+        <h2>Este site captura dados</h2>
+        <p>Nós capturamos dados para melhorar sua experiência. Você aceita?</p>
+        <button id="aceitar">Aceitar</button>
+        <button id="rejeitar">Recusar</button>
+      </div>
+    </div>
+
     <script src="./scripts/login.js" type="module"></script>
-    <!-- Script /> -->
   </body>
 </html>

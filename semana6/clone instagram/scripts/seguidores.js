@@ -1,10 +1,8 @@
 import { seguidores } from "../constantes/seguidores.js";
 
-// Criando uma cópia dos seguidores com um apelido adicionado
 const seguidoresFormatados = seguidores.map((seguidor) => {
   return {
     ...seguidor,
-    // Criando o apelido: removendo acentos, convertendo para letras minúsculas e substituindo espaços por underscores
     apelido:
       "#" +
       seguidor.nome
@@ -15,8 +13,6 @@ const seguidoresFormatados = seguidores.map((seguidor) => {
   };
 });
 
-// USAR OPERADORES LOGICOS PARA PODER RECEBER QUALQUER TIPO DE INPUT <<< TODO TODO
-// Definindo um event listener para o formulário de pesquisa
 document.getElementById("form-pesquisa").addEventListener("submit", (event) => {
   event.preventDefault(); // Prevenindo o comportamento padrão do formulário (recarregar a página)
 
@@ -117,8 +113,15 @@ function quantidadeDePublicacoesSeguidores() {
   }, 0);
 
   console.log(total);
+
+  const nomes = seguidoresFormatados.reduce((acumulador, itemDaVez) => {
+    return acumulador + "," + itemDaVez.nome;
+  }, "");
+
+  console.log(nomes);
 }
 
 quantidadeDePublicacoesSeguidores();
 exibirObservacao();
+
 window.onload = criarLinhasTabela;
