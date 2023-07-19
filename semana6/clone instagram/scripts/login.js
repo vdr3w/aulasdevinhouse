@@ -5,14 +5,14 @@ document.getElementById("form-login").addEventListener("submit", realizarLogin);
 document.getElementById("aceitar").addEventListener("click", salvarDecisao);
 document.getElementById("rejeitar").addEventListener("click", salvarDecisao);
 
+const campoEmail = document.getElementById("campo-email");
+const campoSenha = document.getElementById("campo-senha");
+const loginButton = document.getElementById("login-button");
+
 function salvarDecisao() {
   localStorage.setItem("decisao-permissao", "ok");
   document.getElementById("modal-permission").style.display = "none";
 }
-
-const campoEmail = document.getElementById("campo-email");
-const campoSenha = document.getElementById("campo-senha");
-const loginButton = document.getElementById("login-button");
 
 function resetForm() {
   campoEmail.classList.remove("input-error");
@@ -43,7 +43,7 @@ function realizarLogin(event) {
     );
     console.log(usuarioEncontrado);
     if (usuarioEncontrado) {
-      localStorage.setItem("nome_usuario");
+      localStorage.setItem("nome_usuario", "Drew");
 
       campoEmail.style.display = "none";
       campoSenha.style.display = "none";
@@ -73,3 +73,11 @@ function exibirModal() {
 }
 
 setTimeout(exibirModal, 5000);
+
+function exibirData() {
+  const data = new Date().toTimeString();
+
+  document.getElementById("data").innerHTML = data;
+}
+
+setInterval(exibirData, 1000);
