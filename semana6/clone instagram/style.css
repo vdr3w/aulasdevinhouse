@@ -190,3 +190,7 @@ td img {
 .disabled-message {
   display: none;
 }
+
+form {
+  min-width: 250px;
+}

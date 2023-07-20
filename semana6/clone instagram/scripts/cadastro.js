@@ -1,9 +1,9 @@
-import { fazerCadastro } from "../utils/fazerCadastro";
+import { fazerCadastro } from "../utils/fazerCadastro.js";
+import { regexEmail, regexTelefone } from "../utils/regex.js";
 
-// Armazenar regex
-// ADICIONAR REGEX PARA O RESTO DOS INPUTS <<<<<<<<<<
-var regexTelefone = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
-var regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+document
+  .getElementById("formCadastro")
+  .addEventListener("submit", fazerCadastro);
 
 // Função reset para limpar os campos invalidos caso os inputs estejam validos.
 function reset() {
