@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seguidores</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <ul>
+          <li><a href="home.html">Feed</a></li>
+          <li><a href="explorar.html">Explore</a></li>
+          <li><a href="#">Perfil</a></li>
+          <li><a href="seguidores.html">Seguidores</a></li>
+          <li><a href="index.html">Sair</a></li>
+        </ul>
+      </div>
+
+      <div class="content" id="conteudo">
+        <h1>Seus Seguidores</h1>
+
+        <form id="form-pesquisa">
+          <input id="input-pesquisa" type="text" placeholder="Procurar..." />
+        </form>
+
+        <div
+          id="observation-message"
+          class="observation-message disabled-message"></div>
+
+        <table class="tabela-seguidores" border="1">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nome</th>
+              <th>N.Seguidores</th>
+              <th>N.Publicações</th>
+            </tr>
+          </thead>
+
+          <tbody id="corpo-tabela">
+            <tr>
+              <td>
+                <img
+                  src="https://avatars.githubusercontent.com/u/84882983?v=4"
+                  alt="foto de perfil da pessoa X" />
+              </td>
+              <td>Drew Vieira</td>
+              <td>244</td>
+              <td>35</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./scripts/seguidores.js" type="module"></script>
+  </body>
+</html>

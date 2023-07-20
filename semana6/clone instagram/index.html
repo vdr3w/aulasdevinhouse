@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Instagram - Andre Vieira</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="formulario" id="form-login">
+      <p id="data"></p>
+      <img
+        src="https://logosmarcas.net/wp-content/uploads/2020/04/Instagram-Logo.png"
+        alt="Logo Instagram"
+        width="250px" />
+
+      <input
+        autofocus
+        type="text"
+        id="campo-email"
+        placeholder="Telefone, nome de usuário ou e-mail" />
+
+      <input id="campo-senha" type="password" placeholder="Digite sua senha" />
+
+      <button id="login-button" type="submit">Entrar</button>
+    </form>
+
+    <div
+      id="modal-permission"
+      style="
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      ">
+      <div style="background-color: #fff; padding: 20px">
+        <h2>Este site captura dados</h2>
+        <p>Nós capturamos dados para melhorar sua experiência. Você aceita?</p>
+        <button id="aceitar">Aceitar</button>
+        <button id="rejeitar">Recusar</button>
+      </div>
+    </div>
+
+    <script src="./scripts/login.js" type="module"></script>
+  </body>
+</html>
