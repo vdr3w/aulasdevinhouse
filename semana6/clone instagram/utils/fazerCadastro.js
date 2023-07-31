@@ -49,7 +49,7 @@ export function fazerCadastro(event) {
     document.getElementById("error-email").hidden = false;
     document.getElementById("error-email").innerText = "Digite um email válido";
   } else {
-    fetch("http://localhost:6666/usuarios", {
+    fetch("http://localhost:3333/usuarios", {
       method: "POST",
       body: JSON.stringify({
         nome: nome,
