@@ -24,6 +24,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 4. [Semana 4](/semana4)
 5. [Semana 5](/semana5)
 6. [Semana 6](/semana6)
+7. [Semana 7](/semana7)
 
 ---
 
@@ -72,3 +73,10 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 2 # Fetch e Promises](/semana6/aula2/aula2.md)
 - 🎈[Aula 3 # Fetch e json-server](/semana6/aula3/aula3.md)
 - 🎈[Aula 4 # Fetch](/semana6/aula4/aula4.md)
+
+### Semana 7
+
+- 🎈[Aula 1 # W.I.P](/semana7/aula1/aula1.md)
+- 🎈[Aula 2 # W.I.P](/semana7/aula2/aula2.md)
+- 🎈[Aula 3 # W.I.P](/semana7/aula3/aula3.md)
+- 🎈[Aula 4 # W.I.P](/semana7/aula4/aula4.md)
