@@ -21,6 +21,9 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 1. [Semana 1](/semana1)
 2. [Semana 2](/semana2)
 3. [Semana 3](/semana3)
+4. [Semana 4](/semana4)
+5. [Semana 5](/semana5)
+6. [Semana 6](/semana6)
 
 ---
 
@@ -55,3 +58,17 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 3 # Método .filter() e .every()](/semana4/aula3/aula3.md)
 - 🎈[Aula 4 # Método .every() e .reduce()](/semana4/aula4/aula4.md)
 - 🎈[Aula 5 # Exercicios](/semana4/aula5/aula5.md)
+
+### Semana 5
+
+- 🎈[Aula 1 # SELETORES & EVENTOS](/semana5/aula1/aula1.md)
+- 🎈[Aula 2 # Introdução a POO CLASSES](/semana5/aula2/aula2.md)
+- 🎈[Aula 3 # HERANÇA GET & SET](/semana5/aula3/aula3.md)
+- 🎈[Aula 4 # POLIMORFISMO](/semana5/aula4/aula4.md)
+
+### Semana 6
+
+- 🎈[Aula 1 # Local Storage, SetTimeout e SetInterval](/semana6/aula1/aula1.md)
+- 🎈[Aula 2 # Fetch e Promises](/semana6/aula2/aula2.md)
+- 🎈[Aula 3 # Fetch e json-server](/semana6/aula3/aula3.md)
+- 🎈[Aula 4 # Fetch](/semana6/aula4/aula4.md)
