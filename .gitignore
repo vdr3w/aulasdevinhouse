@@ -1,2 +1,3 @@
 # Ignorar a pasta node_modules
 /node_modules
+/semana7/lista-cursos-vue/node_modules
