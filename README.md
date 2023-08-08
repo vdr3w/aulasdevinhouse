@@ -25,6 +25,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 5. [Semana 5](/semana5)
 6. [Semana 6](/semana6)
 7. [Semana 7](/semana7)
+8. [Semana 8](/semana8)
 
 ---
 
@@ -76,7 +77,14 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 
 ### Semana 7
 
-- 🎈[Aula 1 # W.I.P](/semana7/aula1/aula1.md)
-- 🎈[Aula 2 # W.I.P](/semana7/aula2/aula2.md)
-- 🎈[Aula 3 # W.I.P](/semana7/aula3/aula3.md)
-- 🎈[Aula 4 # W.I.P](/semana7/aula4/aula4.md)
+- 🎈[Aula 1 # Introdução ao VueJs](/semana7/aula1/aula1.md)
+- 🎈[Aula 2 # Introdução ao VueJs](/semana7/aula2/aula2.md)
+- 🎈[Aula 3 # Componentes e props](/semana7/aula3/aula3.md)
+- 🎈[Aula 4 # Avançando no Vue](/semana7/aula4/aula4.md)
+
+### Semana 8
+
+- 🎈[Aula 1 # VueJS - Formulários](/semana8/aula1/aula1.md)
+- 🎈[Aula 2 # VueJS - Formulários](/semana8/aula2/aula2.md)
+- 🎈[Aula 3 # VueJS - Formulários](/semana8/aula3/aula3.md)
+- 🎈[Aula 4 # VueJS - Formulários](/semana8/aula4/aula4.md)
