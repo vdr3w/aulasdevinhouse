@@ -1,6 +1,6 @@
 ## Anotações
 
-# TITULO
+# Aula 03 - Componentes e props
 
 ## Data: 02/08/2023
 
@@ -9,7 +9,7 @@
 ---
 
 💡 LINK SLIDES AULA 3 SEMANA 7 (02 AGOSTO)
-LINK~~~~~~
+https://docs.google.com/presentation/d/1vIz2XdIpfcWzOCBGnoUrWT4aGD86wGcwl4XfRAFNc1s/edit#slide=id.g25dffc8753a_0_0
 
 ---
 

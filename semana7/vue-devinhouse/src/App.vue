@@ -1,34 +1,32 @@
 <template>
   <div>
-    <h1>Calculadora IMC.vue</h1>
-    {{ peso }}
-    <input type="number" placeholder="Peso" v-model="peso" />
-
-    {{ altura }}
-    <input type="number" placeholder="Altura" v-model="altura" />
-    <button @click="calcularImc()">Calcular</button>
-    <span>{{ resultado }}</span>
+    <div></div>
+    <Card>
+      <template #header>
+        <h1>Gatinho</h1>
+      </template>
+      <template #imagem>
+        <img
+          width="200"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkAhU2DDM5zmgh8bYZEWyELz6kCjK3dyVOnpr-7ypO&s"
+          alt="Dog2"
+          srcset="" />
+      </template>
+      <template #footer>
+        <h6>Doguinho Patinha</h6>
+      </template>
+    </Card>
+    <Card></Card>
+    <Card></Card>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      peso: 0,
-      altura: 0,
-      resultado: "",
-    };
-  },
-  methods: {
-    calcularImc() {
-      if (this.peso == 0 || this.altura == 0) {
-        alert("Dados precisam ser diferentes de 0");
-        return;
-      }
+import Card from "./components/Card.vue";
 
-      this.resultado = (this.peso / this.altura ** 2).toFixed(2);
-    },
+export default {
+  components: {
+    Card: Card,
   },
 };
 </script>

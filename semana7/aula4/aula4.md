@@ -1,6 +1,6 @@
 ## Anotações
 
-# TITULO
+# Aula 04 - Avançando no Vue
 
 ## Data: 03/08/2023
 
@@ -9,7 +9,7 @@
 ---
 
 💡 LINK SLIDES AULA 4 SEMANA 7 (03 AGOSTO)
-LINK~~~~~~
+https://docs.google.com/presentation/d/125kUABIeABa-s2q5rWLO0rufiEqkh4qqlTvWItH90B0/edit#slide=id.g25edb51d439_0_0
 
 ---
 
