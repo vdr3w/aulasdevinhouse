@@ -1,6 +1,6 @@
 ## Anotações
 
-# TITULO
+# Aula 02 - Introdução ao VueJs
 
 ## Data: 01/08/2023
 
@@ -9,7 +9,7 @@
 ---
 
 💡 LINK SLIDES AULA 2 SEMANA 7 (01 AGOSTO)
-LINK~~~~~~
+https://docs.google.com/presentation/d/1Y5fkj66S8076gbqB9l3dW4u8Hhkk4RxFvPyvbnSw5HA/edit#slide=id.g25de532e670_0_0
 
 ---
 
