@@ -1,31 +1,67 @@
 <template>
-  <form class="form-login">
+  <form @submit.prevent="handleCreateAccount" class="form-login">
     <h2>Criar Conta</h2>
-    <label for="name">Nome Completo:</label>
-    <input id="name" v-model="name" />
 
-    <label for="email">E-mail:</label>
-    <input id="email" v-model="email" />
+    <div class="form-field">
+      <label for="name">Nome Completo:</label>
+      <span class="message-error"> {{ this.errors.name }}</span>
+      <input class="form-input" id="name" v-model="name" />
+    </div>
 
-    <label for="phone">Telefone:</label>
-    <input id="phone" v-model="phone" />
+    <div class="form-field">
+      <label for="email">E-mail:</label>
+      <span class="message-error"> {{ this.errors.email }}</span>
+      <input id="email" v-model="email" />
+    </div>
 
-    <label for="password">Senha:</label>
-    <input type="password" id="password" v-model="password" />
+    <div class="form-field">
+      <label for="phone">Telefone:</label>
+      <span class="message-error"> {{ this.errors.phone }}</span>
+      <input id="phone" v-model="phone" />
+    </div>
 
-    <label for="password">Confirmar Senha:</label>
-    <input type="password" id="verifyPassword" v-model="verifyPassword" />
+    <div class="form-field">
+      <label for="password">Senha:</label>
+      <span class="message-error"> {{ this.errors.password }}</span>
+      <input type="password" id="password" v-model="password" />
+    </div>
 
-    <label for="sponsor">Patrocinador</label>
-    <select id="sponsor" v-model="sponsor">
-      <option value="">Sem Patrocinador</option>
-      <option value="DevInHouse">DevInHouse</option>
-      <option value="Lab">LAB365</option>
-      <option value="Zucchetti">Zucchetti</option>
-    </select>
+    <div class="form-field">
+      <label for="verifyPassword">Confirmar Senha:</label>
+      <span class="message-error"> {{ this.errors.verifyPassword }}</span>
+      <input type="Password" id="verifyPassword" v-model="verifyPassword" />
+    </div>
 
-    <label for="bio">Bio</label>
-    <textarea id="bio" v-model="bio" cols="30" rows="7"></textarea>
+    <div class="form-field">
+      <label for="sponsor">Patrocinador</label>
+      <select id="sponsor" v-model="sponsor">
+        <option value="">Sem Patrocinador</option>
+        <option value="DevInHouse">DevInHouse</option>
+        <option value="Lab">LAB365</option>
+        <option value="Zucchetti">Zucchetti</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label for="bio">Bio</label>
+      <textarea id="bio" v-model="bio" cols="30" rows="7"></textarea>
+    </div>
+
+    <div class="radio-group">
+      <p>Selecione um Plano</p>
+      <div class="radio-option">
+        <input id="bronze" type="radio" value="1" v-model="planType" />
+        <label for="bronze">Bronze</label>
+      </div>
+      <div class="radio-option">
+        <input id="prata" type="radio" value="2" v-model="planType" />
+        <label for="prata">Prata</label>
+      </div>
+      <div class="radio-option">
+        <input id="ouro" type="radio" value="3" v-model="planType" />
+        <label for="ouro">Ouro</label>
+      </div>
+    </div>
 
     <div class="terms-container">
       <h3>Termos e Condições</h3>
@@ -43,18 +79,17 @@
         Aceito os termos e condições
         <input type="checkbox" id="terms" v-model="terms" />
       </label>
+      <span class="message-error"> {{ this.errors.terms }}</span>
     </div>
 
-    <input id="bronze" type="radio" value="1" v-model="planType" />
-    <label>Bronze</label>
-    <input id="prata" type="radio" value="2" v-model="planType" />
-    <label>Prata</label>
-    <input id="ouro" type="radio" value="3" v-model="planType" />
-    <label>Ouro</label>
+    <button type="submit">Criar Conta</button>
   </form>
 </template>
 
 <script>
+import * as yup from "yup";
+import { captureErrorYup } from "../../../src/utils/captureErrorYup";
+
 export default {
   data() {
     return {
@@ -67,19 +102,92 @@ export default {
       bio: "",
       terms: true,
       planType: "2",
+
+      errors: {},
     };
+  },
+  methods: {
+    handleCreateAccount() {
+      try {
+        const schema = yup.object().shape({
+          name: yup.string().required("Digite um nome válido."),
+          email: yup
+            .string()
+            .email("Digite um email válido.")
+            .required("Email é obrigatório."),
+          phone: yup
+            .string()
+            .required("Telefone é obrigatório")
+            .min(8, "Telefone precisa ter 8 numeros"),
+          password: yup
+            .string()
+            .required("A senha é obrigatória")
+            .min(8, "Senha deve ser maior que 8 caracteres")
+            .max(20, "Senha deve ser menor que 20 caracteres"),
+          verifyPassword: yup
+            .string()
+            .required("A confirmação da senha é obrigatória")
+            .oneOf([yup.ref("password")], "As senhas devem coincidir"),
+          terms: yup.boolean().isTrue("Você deve aceitar os termos."),
+        });
+
+        schema.validateSync(
+          {
+            name: this.name,
+            email: this.email,
+            phone: this.phone,
+            password: this.password,
+            verifyPassword: this.verifyPassword,
+            terms: this.terms,
+          },
+          { abortEarly: false } // Valida todos os erros de uma vez
+        );
+
+        // cadastro
+        fetch("http://localhost:3000/api/register", {
+          method: "POST",
+          body: JSON.stringify({
+            name: this.name,
+            email: this.email,
+            phone: this.phone,
+            password: this.password,
+            verifyPassword: this.verifyPassword,
+            terms: this.terms,
+            sponsor: this.sponsor,
+            terms: this.terms,
+            planType: this.planType,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then((response) => {
+            if (!response.ok) throw new Error();
+            alert("Cadastrado com sucesso!");
+          })
+          .catch(() => {
+            alert("❗❗❗❗📍 ERROR 📍❗❗❗❗");
+          });
+      } catch (error) {
+        if (error instanceof yup.ValidationError) {
+          this.errors = captureErrorYup(error);
+
+          console.log(captureErrorYup(error));
+        }
+      }
+    },
   },
 };
 </script>
 
 <style scoped>
 .form-login {
-  width: 350px;
+  min-width: 300px;
+  width: 60%;
   margin: 50px auto;
   padding: 30px;
   background-color: #f7f7f7;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: "Arial", sans-serif;
 }
 
@@ -88,6 +196,12 @@ h2 {
   margin-bottom: 25px;
   color: #333;
   font-weight: 600;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
 }
 
 label {
@@ -105,16 +219,12 @@ textarea {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 14px;
-  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
   border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
 }
 
 input[type="radio"] {
@@ -131,22 +241,41 @@ input[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-#termsLabel {
-  display: block;
-  text-align: center;
-  margin-top: 10px;
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+  font-family: "Arial", sans-serif;
 }
 
-#termsLabel input[type="checkbox"] {
-  display: block;
-  margin: 5px auto 0; /* alinha a caixa de seleção ao centro abaixo do texto */
+.radio-group p {
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.radio-option label {
+  margin-left: 5px;
+  color: #555;
+  cursor: pointer;
+}
+
+.message-error {
+  color: red;
 }
 
 .terms-container {
@@ -157,7 +286,7 @@ input[type="submit"]:hover {
 }
 
 .terms-content {
-  height: 150px; /* Defina a altura conforme necessário */
+  height: 150px;
   overflow-y: scroll;
   border: 1px solid #e0e0e0;
   padding: 10px;
@@ -166,9 +295,14 @@ input[type="submit"]:hover {
   line-height: 1.5;
 }
 
-h3 {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #555;
+#termsLabel {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#termsLabel input[type="checkbox"] {
+  display: block;
+  margin: 5px auto 0;
 }
 </style>
