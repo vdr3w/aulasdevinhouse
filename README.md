@@ -31,6 +31,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 ---
 
 ### Semana 1
+![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=black) ![CSS3](https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=black)
 
 - 🎈[Aula 1 # Introdução à HTML](/semana1/aula1/aula1.md)
 - 🎈[Aula 2 # Introdução à CSS](/semana1/aula2/aula2.md)
@@ -39,6 +40,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 5 # Exercicios semana1](/semana1/aula5/aula5.md)
 
 ### Semana 2
+![Javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 - 🎈[Aula 1 # Versionamento+ GitHub Classroom](/semana2/aula1/aula1.md)
 - 🎈[Aula 2 # Javascript & Inicio Clone Instagram](/semana2/aula2/aula2.md)
@@ -47,6 +49,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 5 # Exercicios JavaScript](/semana2/aula5/aula5.md)
 
 ### Semana 3
+![Javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 - 🎈[Aula 1 # Funções & Arrow Functions](/semana3/aula1/aula1.md)
 - 🎈[Aula 2 # Arrays & Objetos & Escopo & [Rest · Spread · Destruct]](/semana3/aula2/aula2.md)
@@ -55,6 +58,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 5 # Exercicios](/semana3/aula5/aula5.md)
 
 ### Semana 4
+![Javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 - 🎈[Aula 1 # Módulos e método .find()](/semana4/aula1/aula1.md)
 - 🎈[Aula 2 # Módulos e método .map()](/semana4/aula2/aula2.md)
@@ -63,6 +67,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 5 # Exercicios](/semana4/aula5/aula5.md)
 
 ### Semana 5
+![Javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 - 🎈[Aula 1 # SELETORES & EVENTOS](/semana5/aula1/aula1.md)
 - 🎈[Aula 2 # Introdução a POO CLASSES](/semana5/aula2/aula2.md)
@@ -70,6 +75,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 4 # POLIMORFISMO](/semana5/aula4/aula4.md)
 
 ### Semana 6
+![Javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 - 🎈[Aula 1 # Local Storage, SetTimeout e SetInterval](/semana6/aula1/aula1.md)
 - 🎈[Aula 2 # Fetch e Promises](/semana6/aula2/aula2.md)
@@ -77,6 +83,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 4 # Fetch](/semana6/aula4/aula4.md)
 
 ### Semana 7
+![VueJS](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 
 - 🎈[Aula 1 # Introdução ao VueJs](/semana7/aula1/aula1.md)
 - 🎈[Aula 2 # Introdução ao VueJs](/semana7/aula2/aula2.md)
@@ -84,6 +91,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 4 # Avançando no Vue](/semana7/aula4/aula4.md)
 
 ### Semana 8
+![VueJS](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 
 - 🎈[Aula 1 # VueJS - Formulários](/semana8/aula1/aula1.md)
 - 🎈[Aula 2 # VueJS - Formulários](/semana8/aula2/aula2.md)
