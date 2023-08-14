@@ -27,6 +27,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 6. [Semana 6](/semana6)
 7. [Semana 7](/semana7)
 8. [Semana 8](/semana8)
+9. [Semana 9](/semana9)
 
 ---
 
@@ -97,3 +98,11 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 2 # VueJS - Formulários](/semana8/aula2/aula2.md)
 - 🎈[Aula 3 # VueJS - Formulários](/semana8/aula3/aula3.md)
 - 🎈[Aula 4 # VueJS - Formulários](/semana8/aula4/aula4.md)
+
+### Semana 9
+![VueJS](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+
+- 🎈[Aula 1 # VueJS - WIP](/semana9/aula1/aula1.md)
+- 🎈[Aula 2 # VueJS - WIP](/semana9/aula2/aula2.md)
+- 🎈[Aula 3 # VueJS - WIP](/semana9/aula3/aula3.md)
+- 🎈[Aula 4 # VueJS - WIP](/semana9/aula4/aula4.md)
