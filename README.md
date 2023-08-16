@@ -82,6 +82,9 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 2 # Fetch e Promises](/semana6/aula2/aula2.md)
 - 🎈[Aula 3 # Fetch e json-server](/semana6/aula3/aula3.md)
 - 🎈[Aula 4 # Fetch](/semana6/aula4/aula4.md)
+- 🎈[PROJETO # Buscador](/semana6/buscador)
+- 🎈[PROJETO # Clone Instagram](/semana6/clone%20instagram)
+- 🎈[PROJETO # Frete](/semana6/exemplofrete/pages)
 
 ### Semana 7
 ![VueJS](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
@@ -90,6 +93,8 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 2 # Introdução ao VueJs](/semana7/aula2/aula2.md)
 - 🎈[Aula 3 # Componentes e props](/semana7/aula3/aula3.md)
 - 🎈[Aula 4 # Avançando no Vue](/semana7/aula4/aula4.md)
+- 🎈[PROJETO # Lista Cursos Vue](/semana7/lista-cursos-vue)
+- 🎈[PROJETO # Vue DevInHouse](/semana7/vue-devinhouse)
 
 ### Semana 8
 ![VueJS](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
@@ -98,6 +103,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 2 # VueJS - Formulários](/semana8/aula2/aula2.md)
 - 🎈[Aula 3 # VueJS - Formulários](/semana8/aula3/aula3.md)
 - 🎈[Aula 4 # VueJS - Formulários](/semana8/aula4/aula4.md)
+- 🎈[PROJETO # Clone Instagram](/semana8/clone-instagram)
 
 ### Semana 9
 ![VueJS](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
@@ -106,3 +112,6 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 2 # VueJS - WIP](/semana9/aula2/aula2.md)
 - 🎈[Aula 3 # VueJS - WIP](/semana9/aula3/aula3.md)
 - 🎈[Aula 4 # VueJS - WIP](/semana9/aula4/aula4.md)
+- 🎈[PROJETO # WIP](/semana8/clone-instagram)
+- 🎈[PROJETO # WIP](/semana8/clone-instagram)
+- 🎈[PROJETO # WIP](/semana8/clone-instagram)
