@@ -108,10 +108,10 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 ### Semana 9
 ![VueJS](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 
-- 🎈[Aula 1 # VueJS - WIP](/semana9/aula1/aula1.md)
-- 🎈[Aula 2 # VueJS - WIP](/semana9/aula2/aula2.md)
-- 🎈[Aula 3 # VueJS - WIP](/semana9/aula3/aula3.md)
-- 🎈[Aula 4 # VueJS - WIP](/semana9/aula4/aula4.md)
+- 🎈[Aula 1 # VueJS - Revisão VueJs](/semana9/aula1/aula1.md)
+- 🎈[Aula 2 # VueJS - Router e Axios](/semana9/aula2/aula2.md)
+- 🎈[Aula 3 # VueJS - Vuetify](/semana9/aula3/aula3.md)
+- 🎈[Aula 4 # VueJS - Animações e transições](/semana9/aula4/aula4.md)
 - 🎈[PROJETO # WIP](/semana8/clone-instagram)
 - 🎈[PROJETO # WIP](/semana8/clone-instagram)
 - 🎈[PROJETO # WIP](/semana8/clone-instagram)
