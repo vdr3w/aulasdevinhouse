@@ -1,3 +1,8 @@
 # Ignorar a pasta node_modules
 /node_modules
 /semana7/lista-cursos-vue/node_modules
+/semana8/clone-instagram/node_modules
+/semana9/ciclos-de-vidas-axios/node_modules
+/semana9/formularios-yup/node_modules
+/semana9/revisao-router/node_modules
+/semana9/vuetify-exemplos/node_modules
