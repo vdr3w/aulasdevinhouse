@@ -168,7 +168,6 @@ export default {
             if (error.response?.data?.message) {
               alert(error.response.data.message);
             }
-            alert("Falha ao tentar cadastrar.");
           });
       } catch (error) {
         if (error instanceof yup.ValidationError) {

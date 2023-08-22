@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
@@ -36,7 +38,23 @@ export default {
       if (this.email === "") this.errorInputEmail = "Digite o Email";
       if (this.password === "") this.errorInputPassword = "Digite a Senha";
 
-      this.$router.push("/home");
+      if (this.errorInputEmail === "" && this.errorInputPassword === "") {
+        axios({
+          url: "http://localhost:3000/api/login",
+          method: "POST",
+          data: {
+            email: this.email,
+            password: this.password,
+          },
+        })
+          .then(() => {
+            this.$router.push("/home");
+            console.log("Logado com sucesso");
+          })
+          .catch(() => {
+            alert("Falha ao realizar login");
+          });
+      }
     },
     outroMetodo() {},
   },
