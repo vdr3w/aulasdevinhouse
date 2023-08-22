@@ -82,13 +82,14 @@
       <span class="message-error"> {{ this.errors.terms }}</span>
     </div>
 
-    <button type="submit">Criar Conta</button>
+    <v-btn type="submit" prepend-icon="mdi-check-circle"> Criar Conta </v-btn>
   </form>
 </template>
 
 <script>
 import * as yup from "yup";
 import { captureErrorYup } from "../../../src/utils/captureErrorYup";
+import axios from "axios";
 
 export default {
   data() {
@@ -140,39 +141,40 @@ export default {
             verifyPassword: this.verifyPassword,
             terms: this.terms,
           },
-          { abortEarly: false } // Valida todos os erros de uma vez
+          { abortEarly: false }
         );
 
         // cadastro
-        fetch("http://localhost:3000/api/register", {
+
+        axios({
+          url: "http://localhost:3000/api/register",
           method: "POST",
-          body: JSON.stringify({
+          data: {
             name: this.name,
             email: this.email,
-            phone: this.phone,
+            contact: this.phone,
             password: this.password,
-            verifyPassword: this.verifyPassword,
-            terms: this.terms,
             sponsor: this.sponsor,
-            terms: this.terms,
+            bio: this.bio,
+            confirmTerms: this.terms,
             planType: this.planType,
-          }),
-          headers: {
-            "Content-Type": "application/json",
           },
         })
-          .then((response) => {
-            if (!response.ok) throw new Error();
-            alert("Cadastrado com sucesso!");
+          .then(() => {
+            alert("cadastrado com sucesso");
+            this.$router.push("/");
           })
-          .catch(() => {
-            alert("❗❗❗❗📍 ERROR 📍❗❗❗❗");
+          .catch((error) => {
+            if (error.response?.data?.message) {
+              alert(error.response.data.message);
+            }
+            alert("Falha ao tentar cadastrar.");
           });
       } catch (error) {
         if (error instanceof yup.ValidationError) {
+          console.log(error);
+          // capturar os errors do yup
           this.errors = captureErrorYup(error);
-
-          console.log(captureErrorYup(error));
         }
       }
     },
