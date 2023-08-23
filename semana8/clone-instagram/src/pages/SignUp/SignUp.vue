@@ -171,8 +171,6 @@ export default {
           });
       } catch (error) {
         if (error instanceof yup.ValidationError) {
-          console.log(error);
-          // capturar os errors do yup
           this.errors = captureErrorYup(error);
         }
       }

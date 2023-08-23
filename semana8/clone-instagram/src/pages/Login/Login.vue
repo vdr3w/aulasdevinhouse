@@ -11,9 +11,13 @@
       <input placeholder="Digite o Email" v-model="email" />
       <input type="password" placeholder="Digite a Senha" v-model="password" />
 
-      <button type="submit">Entrar</button>
+      <v-btn class="botao" type="submit">Entrar</v-btn>
 
-      <p><router-link to="/cadastro">Cadastrar</router-link></p>
+      <p>
+        <router-link to="/cadastro">
+          <v-btn class="botao">Fazer Cadastro</v-btn></router-link
+        >
+      </p>
     </form>
   </div>
 </template>
@@ -47,7 +51,10 @@ export default {
             password: this.password,
           },
         })
-          .then(() => {
+          .then((response) => {
+            localStorage.setItem("instagram_token", response.data.token);
+            localStorage.setItem("instagram_name", response.data.name);
+
             this.$router.push("/home");
             console.log("Logado com sucesso");
           })
@@ -112,7 +119,7 @@ form input {
   margin-bottom: 5px;
 }
 
-button {
+botao {
   width: 80%;
   height: 54px;
   background-color: #3578e5;

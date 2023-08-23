@@ -1,7 +1,26 @@
 <template>
-  <h1>MENU</h1>
+  <v-layout>
+    <v-app-bar color="#d6249f" v-if="renderizarMenu">
+      <v-app-bar-title class="titleMenu">Instagram</v-app-bar-title>
 
-  <router-view></router-view>
-
-  <h1>RODAPE</h1>
+      <v-btn icon>
+        <router-link to="/posts/novo">
+          <v-icon color="#FFF">mdi-note-plus-outline</v-icon>
+        </router-link>
+      </v-btn>
+    </v-app-bar>
+    <v-main>
+      <router-view></router-view>
+    </v-main>
+  </v-layout>
 </template>
+
+<script>
+export default {
+  computed: {
+    renderizarMenu() {
+      return this.$route.path !== "/" && this.$route.path !== "/cadastro";
+    },
+  },
+};
+</script>
