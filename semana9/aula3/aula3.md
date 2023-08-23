@@ -15,4 +15,4 @@ https://docs.google.com/presentation/d/1EAdiaKpoUqaR9CUBWB_69a53aeUyr3cuuh1YdlQP
 
 Resumo / Pensamentos Finais:
 
-- Arquivos utilizados em aula: [Repositório Aula1](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana9/aula3)
+- Arquivos utilizados em aula: [Repositório Aula3](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana9/aula3)
