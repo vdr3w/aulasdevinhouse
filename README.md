@@ -29,6 +29,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 7. [Semana 7](/semana7)
 8. [Semana 8](/semana8)
 9. [Semana 9](/semana9)
+10. [Semana 10](/semana10)
 
 ---
 
@@ -116,3 +117,12 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[PROJETO # Ciclos de Vida - Axios](/semana9/ciclos-de-vidas-axios)
 - 🎈[PROJETO # Formularios Vee-Validade & Yup](/semana9/formularios-yup)
 - 🎈[PROJETO # Revisao Router](/semana9/revisao-router)
+
+### Semana 10
+![VueJS](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+- 🎈[Aula 1 # VueJS - WIP]()
+- 🎈[Aula 2 # VueJS - WIP]()
+- 🎈[Aula 3 # VueJS - WIP]()
+- 🎈[Aula 4 # VueJS - WIP]()
+
