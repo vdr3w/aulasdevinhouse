@@ -8,7 +8,7 @@
 
 ---
 
-💡 LINK SLIDES AULA 1 SEMANA 98 (14 AGOSTO)
+💡 LINK SLIDES AULA 1 SEMANA 9 (14 AGOSTO)
 https://docs.google.com/presentation/d/1cKrC9YVYo6e-NYkeaR0tPDA9LeVb1YaSdC-714xSryU/edit#slide=id.g260cb952d00_0_0
 
 ---
