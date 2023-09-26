@@ -1,33 +1,19 @@
 <template>
-  <v-card class="mx-auto" width="400" prepend-icon="mdi-instagram">
-    <template v-slot:title> NOVO POST </template>
-    {{ this.errors.title }}
-    <v-card-text>
-      <v-form @submit.prevent="handleSubmit">
-        <v-text-field
-          v-model="title"
-          clearable
-          label="Titulo do Post"
-          variant="outlined"></v-text-field>
-        <v-textarea
-          v-model="description"
-          label="Descrição do Post"
-          variant="solo-filled"></v-textarea>
-        <v-text-field
-          v-model="url"
-          clearable
-          label="URL da Imagem"
-          variant="outlined"></v-text-field>
-        <v-btn type="submit" class="btnPost" color="#d6249f">POST</v-btn>
-      </v-form>
-    </v-card-text>
-  </v-card>
+  <v-form @submit.prevent="handleSubmit">
+    <v-text-field label="Título" variant="outlined" v-model="title" />
+    <span>{{ this.errors.title }} </span>
+    <v-textarea label="Descrição" v-model="description" />
+    <span>{{ this.errors.description }} </span>
+    <v-text-field label="URL" variant="outlined" v-model="url" />
+    <span>{{ this.errors.url }} </span>
+    <v-btn type="submit">Cadastrar</v-btn>
+  </v-form>
 </template>
 
 <script>
+import axios from "axios";
 import * as yup from "yup";
 import { captureErrorYup } from "../../../utils/captureErrorYup";
-import axios from "axios";
 
 export default {
   data() {
@@ -35,19 +21,21 @@ export default {
       title: "",
       description: "",
       url: "",
+      errors: {},
     };
   },
   methods: {
     handleSubmit() {
       try {
+        // 1 - criar schema validation
         const schema = yup.object().shape({
-          title: yup.string().required("Titulo é Obrigatório!"),
-          url: yup.string().required("URL obrigatoria"),
+          title: yup.string().required("Título é obrigatório"),
+          url: yup.string().required("URL é obrigatório"),
           description: yup
             .string()
-            .required("Descrição é Obrigatória!")
-            .min(5, "Mínimo de 5 caracteres")
-            .max(100, "Máximo de 100 caracteres"),
+            .required("Descrição é obrigatório")
+            .min(20, "A descrição é pequena demais")
+            .max(200, "A descrição ultrapassou o limite"),
         });
 
         schema.validateSync(
@@ -57,18 +45,36 @@ export default {
             url: this.url,
           },
           { abortEarly: false }
-        );
+        ); // importante
+
+        const token = localStorage.getItem("instagram_token");
+
         axios({
           url: "http://localhost:3000/api/posts",
-          methos: "post",
+          method: "post",
           data: {
             title: this.title,
             description: this.description,
             url: this.url,
           },
-        });
+          headers: {
+            Authorization: `Bearen ${token}`,
+          },
+        })
+          .then(() => {
+            alert("Cadastro com sucesso");
+            this.title = "";
+            this.url = "";
+            this.description = "";
+          })
+          .catch(() => {
+            alert("Houve um erro ao realizar o cadastro");
+          });
+
+        // ...............
       } catch (error) {
         if (error instanceof yup.ValidationError) {
+          // capturar os errors do yup
           this.errors = captureErrorYup(error);
         }
       }
@@ -76,9 +82,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.v-btn__content {
-  color: white;
-}
-</style>

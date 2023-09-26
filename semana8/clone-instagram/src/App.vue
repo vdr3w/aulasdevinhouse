@@ -3,9 +3,20 @@
     <v-app-bar color="#d6249f" v-if="renderizarMenu">
       <v-app-bar-title class="titleMenu">Instagram</v-app-bar-title>
 
+      <v-btn>
+        <router-link to="/home">
+          <v-icon color="#FFF">mdi-home</v-icon>
+        </router-link>
+      </v-btn>
       <v-btn icon>
         <router-link to="/posts/novo">
           <v-icon color="#FFF">mdi-note-plus-outline</v-icon>
+        </router-link>
+      </v-btn>
+
+      <v-btn>
+        <router-link to="/posts">
+          <v-icon color="#FFF">mdi-list-box</v-icon>
         </router-link>
       </v-btn>
     </v-app-bar>
