@@ -31,55 +31,39 @@
 </head>
 
 <body>
- <?php 
-   $nome = 'drew'; // String
-   $idade = 30; // Inteiro
-   $preco = 19.99; // Pontos Flutuantes
-   $pessoa = null; // Nula
-   $lista = ["item1", "item2", "item3"]; // Array simples
-   $lista2 = array('item1', 'item2'); // Array forma 'antiga'
-   $approved = true; // Boolean
-   $objpessoa = (object) [    // Array associativo
-    'nome' => 'drewobj',
-    'idade' => 30,
-    'preco' => 19.99,
-   ];
-   $pessoas = [       // Array multi-dimensional (array de arrays)
-    [
-      'nome' => 'drew1',
-      'idade' => 31,],
-    [
-      'nome' => 'drew2',
-      'idade' => 30,
-    ]
-    ];
-
-var_dump($objpessoa->nome); // Equivalente ao console log
-
-?>
- <br>
- <?php echo $objpessoa->nome?> // chamando array associativo
- <br>
- <?php echo "meu nome é $nome e tenho $idade anos e meu limite é de $preco" ?>
- <br>
- <?= "...."?>
- <br>
- <br>
- <br>
- <br>
-
-
- <form class="container" action="">
+ <?php echo $_SERVER['PHP_SELF']?>
+ <form class="container" method="post" action="<?php echo $_SERVER['PHP_SELF']?>">
   <h2>CARTA DE FERIAS</h2>
   <label for="">Nome:</label>
-  <input type="text" placeholder="Nome Funcionario">
+  <input type="text" placeholder="Nome Funcionario" name="name">
   <label for="">Inicio:</label>
-  <input type="date">
+  <input type="date" name="start_date">
   <label for="">Fim:</label>
-  <input type="date">
+  <input type="date" name="end_date">
   <br>
   <button type="submit">Gerar</button>
  </form>
+
+ <?php 
+  if( isset($_POST['name']) && $_POST['start_date'] && $_POST['end_date']) {
+
+  $name = $_POST['name'];
+  $start_date = $_POST['start_date'];
+  $end_date = $_POST['end_date'];
+
+    ?>
+
+ <div class="container">
+  <p>Nome: <?php echo $name?></p>
+  <p>Inicio Das Ferias: <?php echo $start_date?></p>
+  <p>Fim Das Ferias: <?php echo $end_date?></p>
+ </div>
+
+ <?php
+  } else {
+    echo "Preencha informações";
+  }
+?>
 
 </body>
 
