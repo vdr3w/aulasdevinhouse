@@ -32,6 +32,7 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 9. [Semana 9 - FRONTEND](/semana9)
 10. [Semana 10 - FRONTEND](/semana10)
 11. [Semana 1 - BACKEND](/semana1-backend)
+12. [Semana 2 - BACKEND](/semana2-backend)
 
 ---
 
@@ -126,12 +127,22 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 1 # VueJS - Preparação do Projeto de Conclusão de Módulo](/semana10/aula1/aula1.md)
 - 🎈[Aula 2 # VueJS - Preparação do Projeto de Conclusão de Módulo](/semana10/aula2/aula2.md)
 - 🎈[Aula 3 # VueJS - Preparação do Projeto de Conclusão de Módulo](/semana10/aula3/aula3.md)
-- 🎈[Aula 4 # VueJS - Preparação do Projeto de Conclusão de Módulo](/semana10/aula3/aula3.md)
+- 🎈[Aula 4 # VueJS - Preparação do Projeto de Conclusão de Módulo](/semana10/aula4/aula4.md)
 
 ### Semana 1 - BACKEND
+![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-- 🎈[Aula 1 # Fundamentos do PHP]()
-- 🎈[Aula 2 # Fundamentos do PHP]()
-- 🎈[Aula 3 # Fundamentos do PHP]()
-- 🎈[Aula 4 # Fundamentos do PHP]()
+- 🎈[Aula 1 # Fundamentos do PHP - Configurando Ambiente e Extensões](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana1-backend/aula1/aula1.md)
+- 🎈[Aula 2 # Fundamentos do PHP - Sintaxe Básica, PHP Info, Echo & Introdução Variáveis](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana1-backend/aula2/aula2.md)
+- 🎈[Aula 3 # Fundamentos do PHP - Conhecendo Estrutura de Repetições e Variáveis Superglobais](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana1-backend/aula3/aula3.md)
+- 🎈[Aula 4 # Fundamentos do PHP - Finalizando exemplo com variável $_SERVER & Resolução de Desafio](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana1-backend/aula4/aula4.md)
+
+### Semana 2 - BACKEND
+![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+
+- 🎈[Aula 1 # Fundamentos do PHP - Conhecendo Operações com Array - Parte 1](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana2-backend/aula1/aula1.md)
+- 🎈[Aula 2 # Fundamentos do PHP - Entendendo o Funcionamento de Funções no PHP](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana2-backend/aula2/aula2.md)
+- 🎈[Aula 3 # Fundamentos do PHP - Entendendo o Funcionamento das Requisições no Frontend](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana2-backend/aula3/aula3.md)
+- 🎈[Aula 4 # Fundamentos do PHP - Conhecendo Operações com Array - Parte 2](https://github.com/vdr3w/aulasdevinhouse/tree/main/semana2-backend/aula4/aula4.md)
