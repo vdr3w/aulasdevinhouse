@@ -1,6 +1,6 @@
 ## Anotações
 
-# TITULO PHP
+# Banco de dados - DDL, DML e DQL
 
 ## Data: 17/10/2023
 
@@ -9,7 +9,7 @@
 ---
 
 💡 LINK SLIDES BACKEND AULA 2 SEMANA 4 (17 OUTUBRO)
-LINK
+https://docs.google.com/presentation/d/1FZpOzA549ZtPWfrbocJp1cKtEg6ySDyJsADlTqT0hhU/edit#slide=id.g10d952ca74f_0_79
 
 ---
 

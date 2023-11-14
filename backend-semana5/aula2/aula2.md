@@ -1,6 +1,6 @@
 ## Anotações
 
-# TITULO PHP
+# PDO
 
 ## Data: 24/10/2023
 
@@ -9,7 +9,7 @@
 ---
 
 💡 LINK SLIDES BACKEND AULA 2 SEMANA 5 (24 OUTUBRO)
-LINK
+https://docs.google.com/presentation/d/1LDb3v67E0yrQAiVSOgKcXWacWexkilnJnRhG90FnC3w/edit#slide=id.g292160100c5_1_97
 
 ---
 

@@ -1,6 +1,6 @@
 ## Anotações
 
-# TITULO PHP
+# Fundamentos do PHP
 
 ## Data: 03/10/2023
 
@@ -9,7 +9,7 @@
 ---
 
 💡 LINK SLIDES BACKEND AULA 2 SEMANA 2 (03 OUTUBRO)
-LINK
+https://docs.google.com/presentation/d/1oVBq0zQN8QcRSGP2F6_FxKTJ26pk8SyAq8bGK1bCcXY/edit#slide=id.g287a8247a6c_0_0
 
 ---
 

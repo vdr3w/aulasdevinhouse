@@ -1,6 +1,6 @@
 ## Anotações
 
-# TITULO PHP
+# Manipulação de strings e Datas
 
 ## Data: 09/10/2023
 
@@ -9,7 +9,7 @@
 ---
 
 💡 LINK SLIDES BACKEND AULA 1 SEMANA 3 (09 OUTUBRO)
-LINK
+https://docs.google.com/presentation/d/11H78MGRZ5JpGjTNIZsqDLEf01KB-YqCEWasaHG-YfOs/edit#slide=id.g10d952ca74f_0_79
 
 ---
 

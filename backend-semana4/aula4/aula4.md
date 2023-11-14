@@ -1,6 +1,6 @@
 ## Anotações
 
-# TITULO PHP
+# Banco de dados
 
 ## Data: 19/10/2023
 
@@ -9,7 +9,7 @@
 ---
 
 💡 LINK SLIDES BACKEND AULA 4 SEMANA 4 (19 OUTUBRO)
-LINK
+https://docs.google.com/presentation/d/1FbT4N47ki74J7STNMS3Tq71rnfmhqkYn6m5sb9Ag2Pg/edit#slide=id.g28fe2303e5c_0_0
 
 ---
 

@@ -1,15 +1,15 @@
 ## Anotações
 
-# TITULO PHP
+# Introdução ao Laravel
 
-## Data: 30/10/2023
+## Data: 06/11/2023
 
-### Professor: Douglas Cavalcante
+### Professor: Robert Santos
 
 ---
 
-💡 LINK SLIDES BACKEND AULA 1 SEMANA 6 (30 OUTUBRO)
-LINK
+💡 LINK SLIDES BACKEND AULA 1 SEMANA 7 (06 NOVEMBRO)
+https://docs.google.com/presentation/d/1oDlj7YNqe010Po1vyzHhzy5TD1FLLMjcyCTdx0XZBHc/edit#slide=id.g10d952ca74f_0_79
 
 ---
 

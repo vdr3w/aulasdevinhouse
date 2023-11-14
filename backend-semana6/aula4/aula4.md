@@ -1,15 +1,15 @@
 ## Anotações
 
-# TITULO PHP
+# Primeiros passos com Laravel
 
-## Data: 02/11/2023
+## Data: 09/11/2023
 
-### Professor: Douglas Cavalcante
+### Professor: Robert Santos
 
 ---
 
-💡 LINK SLIDES BACKEND AULA 4 SEMANA 6 (02 NOVEMBRO)
-LINK
+💡 LINK SLIDES BACKEND AULA 4 SEMANA 7 (09 NOVEMBRO)
+https://docs.google.com/presentation/d/1SYA0ZNBSYYVCBsE2drYLHXzd0QKAp407JASrsLghSHU/edit#slide=id.g10d952ca74f_0_79
 
 ---
 
