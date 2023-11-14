@@ -32,8 +32,13 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 8. [Semana 8 - FRONTEND](/semana8)
 9. [Semana 9 - FRONTEND](/semana9)
 10. [Semana 10 - FRONTEND](/semana10)
-11. [Semana 1 - BACKEND](/semana1-backend)
-12. [Semana 2 - BACKEND](/semana2-backend)
+11. [Semana 1 - BACKEND](/backend-semana1)
+12. [Semana 2 - BACKEND](/backend-semana2)
+13. [Semana 3 - BACKEND](/backend-semana3)
+14. [Semana 4 - BACKEND](/backend-semana4)
+15. [Semana 5 - BACKEND](/backend-semana5)
+16. [Semana 6 - BACKEND](/backend-semana6)
+17. [Semana 7 - BACKEND](/backend-semana7)
 
 ---
 
@@ -192,7 +197,6 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 
 ### Semana 6 - BACKEND - LARAVEL
 
-![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![LARAVEL](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 
@@ -203,7 +207,6 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 
 ### Semana 7 - BACKEND - LARAVEL
 
-![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![LARAVEL](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 
