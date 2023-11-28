@@ -39,6 +39,8 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 15. [Semana 5 - BACKEND](/backend-semana5)
 16. [Semana 6 - BACKEND](/backend-semana6)
 17. [Semana 7 - BACKEND](/backend-semana7)
+18. [Semana 8 - BACKEND](/backend-semana8)
+19. [Semana 9 - BACKEND](/backend-semana9)
 
 ---
 
@@ -214,3 +216,24 @@ Este é um repositório contendo o conteúdo estudado nas aulas DevInHouse, turm
 - 🎈[Aula 2 # Laravel](https://github.com/vdr3w/aulasdevinhouse/tree/main/backend-semana7/aula2/aula2.md)
 - 🎈[Aula 3 # Laravel](https://github.com/vdr3w/aulasdevinhouse/tree/main/backend-semana7/aula3/aula3.md)
 - 🎈[Aula 4 # Laravel](https://github.com/vdr3w/aulasdevinhouse/tree/main/backend-semana7/aula4/aula4.md)
+
+### Semana 8 - BACKEND - LARAVEL
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![LARAVEL](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+
+- 🎈[Aula 1 # Laravel](https://github.com/vdr3w/aulasdevinhouse/tree/main/backend-semana8/aula1/aula1.md)
+- 🎈[Aula 2 # Laravel](https://github.com/vdr3w/aulasdevinhouse/tree/main/backend-semana8/aula2/aula2.md)
+- 🎈[Aula 3 # Laravel](https://github.com/vdr3w/aulasdevinhouse/tree/main/backend-semana8/aula3/aula3.md)
+- 🎈[Aula 4 # Laravel](https://github.com/vdr3w/aulasdevinhouse/tree/main/backend-semana8aula4/aula4.md)
+
+### Semana 9 - BACKEND - LARAVEL
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![LARAVEL](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+
+- 🎈[Aula 1 # Laravel](https://github.com/vdr3w/aulasdevinhouse/tree/main/backend-semana9/aula1/aula1.md)
+- 🎈[Aula 2 # Laravel](https://github.com/vdr3w/aulasdevinhouse/tree/main/backend-semana9/aula2/aula2.md)
+- 🎈[Aula 3 # Laravel](https://github.com/vdr3w/aulasdevinhouse/tree/main/backend-semana9/aula3/aula3.md)
+- 🎈[Aula 4 # Laravel](https://github.com/vdr3w/aulasdevinhouse/tree/main/backend-semana9/aula4/aula4.md)
+- 🎈[PROJETO # API Pets - Laravel (Revisão)](/semana9/projetos/api_pets_laravel_revisao)
